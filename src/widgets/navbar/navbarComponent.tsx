@@ -25,7 +25,7 @@ export default function NavbarComponent({
                 </div>
                 <div className="d-none d-md-flex">
                     {
-                        navIcons.map(icon => <Link href={icon.url} className="px-2 pointer">
+                        navIcons.map(icon => <Link key={icon.url} href={icon.url} className="px-2 pointer">
                             <img width="22" height="22" src={icon.icon} alt="user" />
                         </Link>)
                     }
