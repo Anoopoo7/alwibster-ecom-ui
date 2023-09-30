@@ -18,10 +18,11 @@ export default function NavbarComponent({
             <Container className={style.navbar_items}>
                 <img className="d-none d-md-block" width="130" src={logo.lg} alt="logo" />
                 <div className={`d-none d-md-flex ${style.navbar_qucklinks}`}>
-                    <p className="px-3 text-light">Shirts</p>
-                    <p className="px-3 text-light">pants</p>
-                    <p className="px-3 text-light">kurthas</p>
-                    <p className="px-3 text-light">shoes</p>
+                    <p className="px-3 text-light pointer">New & Featured</p>
+                    <p className="px-3 text-light pointer">Men</p>
+                    <p className="px-3 text-light pointer">Women</p>
+                    <p className="px-3 text-light pointer">Kids</p>
+                    <p className="px-3 text-light pointer">Airforce One</p>
                 </div>
                 <div className="d-none d-md-flex">
                     {

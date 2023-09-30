@@ -6,7 +6,7 @@ export default function HomeWidgetSelector({
 }: {
     widgets: Array<String>
 }) {
-    return widgets.map(widget => {
+    return widgets?.map(widget => {
         switch (widget) {
             case "20009200-5ef9-11ee-ad19-1fcccc669dd1":
                 return <NavbarContainer />

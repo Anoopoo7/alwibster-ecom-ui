@@ -1,17 +1,12 @@
-import axios from "axios";
-
 export async function getWidgetsByPageType(type: string) {
-    const response = await axios.get("http://localhost:3001/widgets");
-    if (response && response.data) {
-        return response.data;
-    }
-    return null;
+    return fetch("http://localhost:3001/widgets", { next: { revalidate: 60 } })
+        .then(response => response.json())
+        .then(json => json)
+
 }
 
 export async function getWidgetByWidgetId(id: string) {
-    const response = await axios.get("http://localhost:3001/" + id);
-    if (response && response.data) {
-        return response.data;
-    }
-    return null;
+    return fetch(`http://localhost:3001/${id}`, { cache: 'no-store' })
+        .then(response => response.json())
+        .then(json => json)
 }
