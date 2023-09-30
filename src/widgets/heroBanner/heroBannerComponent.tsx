@@ -17,6 +17,7 @@ export default function HeroBannerComponent({ heading, buttons, background }: He
                 dangerouslySetInnerHTML={{ __html: heading.label }}
             />
             <h1 className={`d-block d-md-none ${style.hero_banner_heading_md}`}
+                style={{ textAlign: (heading.position || "center") as "start" | "end" | "left" | "right" | "center" | "justify" | "match-parent" }}
                 dangerouslySetInnerHTML={{ __html: heading.label }}
             />
             <br />
@@ -40,7 +41,7 @@ export default function HeroBannerComponent({ heading, buttons, background }: He
                     </Link>)
                 }
             </div>
-            <div className="d-flex d-md-none">
+            <div className={`d-flex d-md-none justify-content-${heading.position}`}>
                 {
                     buttons?.map(button => <Link
                         key={button.label}
