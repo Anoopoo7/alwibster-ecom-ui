@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&family=Tenor+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Signika', sans-serif;
 }
-.pointer{
+
+.pointer {
     cursor: pointer;
+}
+
+* {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }

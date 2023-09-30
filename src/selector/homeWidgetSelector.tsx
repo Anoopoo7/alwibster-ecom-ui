@@ -1,5 +1,6 @@
 import HeroBannerContainer from "@/widgets/heroBanner/heroBannerContainer";
 import NavbarContainer from "@/widgets/navbar/navbarContainer";
+import ProductCarouselContainer from "@/widgets/productCarousel/ProductCarouselContainer";
 
 export default function HomeWidgetSelector({
     widgets
@@ -12,6 +13,8 @@ export default function HomeWidgetSelector({
                 return <NavbarContainer />
             case "243dc680-5ef9-11ee-ad19-1fcccc669dd1":
                 return <HeroBannerContainer />
+            case "2dbe26c2-2873-403e-a994-ab3889f913c3":
+                return <ProductCarouselContainer />
             default:
                 <></>;
         }
