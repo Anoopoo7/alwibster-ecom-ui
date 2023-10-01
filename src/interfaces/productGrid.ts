@@ -7,4 +7,5 @@ export default interface ProductGrid {
     position: Position
     banner: Image
     products: Array<ProductCard>
+    bannerPosition: Position
 }
