@@ -7,7 +7,7 @@
     background-color: #00000027;
     position: fixed;
     top: 0;
-
+    z-index: 10;
 }
 
 .navbar_items {
@@ -26,7 +26,7 @@
 
 .herobanner_outer {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-position: top;
     object-fit: fill;
     background-size: cover;
@@ -85,7 +85,7 @@
 
 .slider_outer {
     width: 100%;
-    height: 550px;
+    height: 500px;
     display: block;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -99,4 +99,11 @@
     min-width: 100%;
     display: flex;
     position: absolute
+}
+
+.product_grid_img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    object-position: top;
 }
