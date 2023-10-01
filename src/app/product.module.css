@@ -3,3 +3,12 @@
     height: 440px;
     margin: 10px;
 }
+
+
+@media screen and (max-width: 992px) {
+
+    .product_card h5,
+    .product_card p {
+        font-size: medium;
+    }
+}

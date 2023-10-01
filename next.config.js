@@ -3,10 +3,6 @@ const nextConfig = {}
 
 module.exports = {
     images: {
-        remotePatterns: [
-            {
-                hostname: 'i.ibb.co',
-            },
-        ],
-    },
+        domains: ['i.ibb.co', 'fashionopolism-secret-sale.myshopify.com'],
+    }
 }
